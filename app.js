@@ -4,6 +4,7 @@ const request = require("request");
 const https = require("https");
 const path = require("path");
 require("dotenv").config({ path: "./vars/.env" });
+console.log(process.env);
 
 const app = express();
 
