@@ -2,7 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
 const https = require("https");
-require("dotenv").config();
+const path = require("path");
+require("dotenv").config({ path: "./vars/.env" });
 
 const app = express();
 
@@ -67,7 +68,7 @@ app.listen(3000, () => {
 });
 
 //API key
-// 71377506e9a602242a3ecc0ef5581aec-us14
+// c7093befe474b66f04b763988a84be43-us14
 
 //List id
 // 1a81123d4d
